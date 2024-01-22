@@ -1,0 +1,103 @@
+@import url('https://fonts.googleapis.com/css2?family=Headland+One:wght@400;700&display=swap');
+
+$font-family: 'Headland One';
+$secondary-font-family: 'Arial Unicode MS', sans-serif;
+
+
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    overflow: hidden;
+    position: relative;
+
+    .logo-container {
+        display: flex;
+        align-items: center;
+    }
+
+    span {
+        font-family: $font-family;
+        font-size: 25px !important;
+        font-weight: bold;
+        text-transform: uppercase;
+        
+    }
+
+    .logo {
+        display: flex;
+        align-items: center;
+        line-height: 15px;
+        margin-left: 100px;
+
+        img {
+            width: 60px;
+            height: auto;
+            margin-right: 10px;
+        
+        }
+    }
+
+    a {
+        color: rgb(0, 0, 0);
+        text-decoration: none;
+        font-size: 20px;
+        font-family: $secondary-font-family;
+        line-height: 2px;
+        margin-right: 25px; 
+     
+    }
+    
+
+    .header-right {
+        display: flex;
+        align-items: center;
+        margin-right: 120px; 
+        
+
+        a {
+            margin-left: 15px;
+        }
+
+
+    }
+    
+    @media (max-width: 768px) {
+        .header-right {
+          display: none; 
+          position: absolute;
+          top: 60px; 
+          right: 0;
+          background-color: #fff;
+          width: 100%;
+          flex-direction: column;
+          box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    
+          a {
+            margin: 10px 20px; 
+          }
+        }
+    
+    
+        .header {
+          position: relative;
+          flex-direction: column;
+    
+          .logo-container {
+            margin-bottom: 20px;
+          }
+        }
+      }
+    
+    
+    @media (min-width: 769px) {
+      .header-right {
+        display: flex !important;
+      }
+    
+    }
+
+}
+
+
+
