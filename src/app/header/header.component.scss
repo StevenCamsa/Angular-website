@@ -62,7 +62,7 @@ $secondary-font-family: 'Arial Unicode MS', sans-serif;
 
     }
     
-    @media (max-width: 768px) {
+    @media (max-width: 800px) {
         .header-right {
           display: none; 
           position: absolute;
@@ -89,13 +89,61 @@ $secondary-font-family: 'Arial Unicode MS', sans-serif;
         }
       }
     
-    
-    @media (min-width: 769px) {
-      .header-right {
-        display: flex !important;
+
+
+      @media (max-width: 900px) {
+        .header-right {
+          display: flex !important;
+          width: 100px;
+          padding-right: 190px;
+
+          a {
+            font-size: 17px;
+            margin-left: 8px;
+            max-width: 80px; 
+            white-space: nowrap; 
+            text-overflow: ellipsis; 
+          }
+        }
+
+      .logo {
+        margin-left: 40px;
+
+        img {
+            height: auto;
+        }
+
+        span {
+
+          font-size: 20px !important;
+          
       }
-    
     }
+   }
+
+   @media (max-width: 1200px) {
+    .header-right {
+      display: flex !important;
+
+      a {
+
+        white-space: nowrap; 
+        text-overflow: ellipsis; 
+      }
+    }
+    .logo{
+
+      span {
+
+        font-size: 21px !important;
+        padding-right: 70px;
+        white-space: nowrap; 
+        text-overflow: ellipsis; 
+    }
+    }
+    
+
+}
 
 }
 
