@@ -61,7 +61,7 @@ $secondary-font-family: 'Arial Unicode MS', sans-serif;
 
 
     }
-    
+
     @media (max-width: 800px) {
         .header-right {
           display: none; 
@@ -91,7 +91,7 @@ $secondary-font-family: 'Arial Unicode MS', sans-serif;
     
 
 
-      @media (max-width: 900px) {
+      @media only screen and (min-width: 801px) and (max-width: 1000px) {
         .header-right {
           display: flex !important;
           width: 100px;
@@ -121,7 +121,7 @@ $secondary-font-family: 'Arial Unicode MS', sans-serif;
     }
    }
 
-   @media (max-width: 1200px) {
+   @media only screen and (min-width: 1001px) and (max-width: 1200px) {
     .header-right {
       display: flex !important;
 

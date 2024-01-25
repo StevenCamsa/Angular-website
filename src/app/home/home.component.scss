@@ -105,6 +105,7 @@ $third-font-family:'Helvetica World Bold', sans-serif;
   
 
   h1 {
+ 
     font-size: 34px;
     margin-bottom: 40px;
     font-family: $third-font-family;
@@ -220,21 +221,6 @@ $third-font-family:'Helvetica World Bold', sans-serif;
     text-align: center;
   }
 
-  @media screen and (max-width: 1200px) {
-    width: auto;
-    p {
-      font-size: 22px;
-      padding: 30px;
-      max-width: 70%
-    }
-  }
-
-  @media screen and (max-width: 800px) {
-    p {
-      font-size: 22px;
-      padding: 20px;
-    }
-  }
 }
 
 

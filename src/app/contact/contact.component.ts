@@ -9,5 +9,6 @@ import { CommonModule } from '@angular/common';
   styleUrl: './contact.component.scss'
 })
 export class ContactComponent {
-
+  
+  Email: string = 'hafniumsystems@gmail.com';
 }
