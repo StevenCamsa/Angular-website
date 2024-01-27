@@ -18,6 +18,7 @@ $third-font-family:'helioscondc', sans-serif;
   align-items: center;
   text-align: center;
   color: #fff;
+  
 
   h1 {
     padding-left: 65px;
@@ -82,5 +83,154 @@ $third-font-family:'helioscondc', sans-serif;
   span {
     display: block;
     margin-bottom: 1px;
+  }
+}
+
+
+@media only screen and (max-width: 300px){
+
+  .header {  
+    h1 {
+      padding-left: 0;
+      font-size: 30px;
+    }
+  
+    p {
+      padding-left: 0;
+      font-size: 18px;
+    }
+  }
+
+  .container {
+    
+    max-width: 100%;
+    margin: 0 auto;
+    padding: 40px;
+    padding-right: 50px; 
+  }
+
+  .content {
+    flex-direction: column;
+  }
+
+  .content-left {
+    img {
+      width: 100%;
+    }
+  }
+
+  .content-right {
+    padding-left: 10px;
+  
+    h1 {
+      font-weight: bold;
+      font-family: $third-font-family;
+      font-size: 30px;
+    }
+  
+    p,
+    span {
+      font-size: 14px;
+    }
+  }
+}
+
+@media only screen and (min-width: 300px) and (max-width: 500px){
+
+  .header {  
+    h1 {
+      padding-left: 0;
+      font-size: 30px;
+    }
+  
+    p {
+      padding-left: 0;
+      font-size: 18px;
+    }
+  }
+
+  .container {
+    
+    max-width: 100%;
+    margin: 0 auto;
+    padding: 40px;
+    padding-right: 50px; 
+  }
+
+  .content {
+    flex-direction: column;
+  }
+
+  .content-left {
+    padding-left: 30px;
+    img {
+      width: 70%;
+    }
+  }
+
+}
+
+@media only screen and (min-width: 501px) and (max-width: 850px) {
+
+  .header {  
+    h1 {
+      padding-left: 35px;
+      font-size: 50px;
+    }
+  
+    p {
+      padding-left: 35px;
+      font-size: 25px;
+
+    }
+  }
+  .container {
+    
+    max-width: 100%;
+    margin: 0 auto;
+    padding: 40px;
+    padding-right: 200px; 
+  }
+
+  .content {
+    flex-direction: column;
+  }
+
+  .content-left {
+    padding-left: 20px;
+    img {
+      width: 70%;
+    }
+  }
+}
+
+@media only screen and (min-width: 851px) and (max-width: 1000px) {
+  .container {
+    
+    max-width: 100%;
+    margin: 0 auto;
+    padding: 40px;
+    padding-right: 200px; 
+  }
+
+  .content {
+    flex-direction: column;
+  }
+
+  .content-left {
+    padding-left: 25px;
+    img {
+      width: 50%;
+    }
+  }
+}
+
+
+@media only screen and (min-width: 1001px) and (max-width: 1200px) {
+
+  .content-left {
+    img {
+      width: 320px;
+    }
   }
 }
