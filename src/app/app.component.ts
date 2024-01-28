@@ -1,8 +1,9 @@
-import { Component } from '@angular/core';
+import { Component, HostListener } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { RouterOutlet } from '@angular/router';
 import { HeaderComponent } from './header/header.component';
 import { FooterComponent } from './footer/footer.component';
+
 
 
 @Component({
@@ -18,4 +19,13 @@ import { FooterComponent } from './footer/footer.component';
 
 export class AppComponent {
   title = 'app';
+
+  isReloading = false;
+
+  @HostListener('window:beforeunload', ['$event'])
+  unloadNotification($event: any): void {
+    this.isReloading = true;
+  }
+
+  
 }

@@ -29,7 +29,6 @@ $lower-color: rgba(48, 140, 206, 0.5);
   p {
     padding-left: 75px;
     padding-top: 10px;
-    font-weight: normal;
     font-size: 25px;
     margin-top: 0;
     max-width: 55%;
@@ -77,6 +76,7 @@ $lower-color: rgba(48, 140, 206, 0.5);
     display: block;
     padding-left: 60px;
     color: #040404;
+    margin-right: 5%;
     
 
     h2 {
@@ -116,6 +116,7 @@ $lower-color: rgba(48, 140, 206, 0.5);
   padding: 40px;
   text-align: center;
 
+
   .Core-title {
     margin-bottom: 30px;
     margin-top: 50px;
@@ -133,6 +134,7 @@ $lower-color: rgba(48, 140, 206, 0.5);
     flex-wrap: wrap;
     justify-content: space-between;
     padding: 80px;
+  
 
 
     .core-integ,
@@ -145,8 +147,8 @@ $lower-color: rgba(48, 140, 206, 0.5);
       margin-bottom: 30px;
 
       img {
-        width: 140px;
-        height: 140px;
+        width: 45%;
+        height: auto;
         border-radius: 50%;
         object-fit: cover;
       }
@@ -163,6 +165,12 @@ $lower-color: rgba(48, 140, 206, 0.5);
         font-size: 20px;
         text-align: center;
         color: #333;
+        
+      }
+    }
+    .core-innov {
+      img{
+        width: 40%;
       }
     }
 
@@ -192,4 +200,369 @@ $lower-color: rgba(48, 140, 206, 0.5);
         margin: 0 auto; 
     }
   }
+}
+
+
+@media only screen and (max-width: 500px) {
+
+  .header {
+    padding-bottom: 40px;
+  
+    h1 {
+      padding-left: 8%;
+      font-size: 30px;
+    }
+  
+    p {
+      padding-left: 5%;
+      font-size: 18px;
+      max-width: 80%;
+    }
+  }
+
+  .container-2 {
+    flex-direction: column;
+    padding-left: 15%;
+  
+    .image {
+      padding-left: 15%;
+  
+      img {
+        height: auto;
+        width: 70%;
+      }
+    }
+    
+    .content {
+      padding-left: 5%;
+
+      h2 {
+        font-size: 30px;
+      }
+  
+      p {
+        font-size: 20px;
+        max-width: 85%;
+      }
+    }
+  }
+
+  .bottom-text {
+    padding-left: 15%;
+    max-width: 80%;
+    p {
+      padding-left: 5%;
+      font-size: 16px;
+    }
+  }
+
+  .Core-title {
+    margin-bottom: 30px;
+    margin-top: 50px;
+
+    h1 {
+      font-size: 30px !important;
+    }
+  }
+
+  .core-content {
+    flex-direction: column;
+
+
+    .core-integ,
+    .core-quality,
+    .core-customize,
+    .core-innov,
+    .core-collab {
+      padding-bottom: 40px;
+      
+
+      img {
+        width: 100px !important;
+      }
+
+      span {
+        width: 200px !important;
+        margin-top: 10px;
+        font-size: 20px !important;
+      }
+    }
+
+    .core-integ{
+      padding-left: 25%;
+    }
+    .core-quality,
+    .core-innov {
+     margin: 0 auto;
+    }
+
+    .core-customize,
+    .core-innov {
+      margin: 0 auto;
+    }
+
+    .core-collab {
+        margin: 0 auto; 
+    }
+
+    .core-collab {
+        width: 50% !important;
+    }
+  }
+}
+
+@media only screen and (min-width: 501px) and (max-width: 800px) {
+
+  .header {
+    padding-bottom: 40px;
+  
+    h1 {
+      padding-left: 8%;
+      font-size: 50px;
+    }
+  
+    p {
+      padding-left: 5%;
+      font-size: 25px;
+      max-width: 80%;
+    }
+  }
+
+  .container-2 {
+    flex-direction: column;
+    padding-left: 15%;
+  
+    .image {
+      padding-left: 15%;
+  
+      img {
+        height: auto;
+        width: 70%;
+      }
+    }
+    
+    .content {
+      padding-left: 5%;
+
+      h2 {
+        font-size: 50px;
+      }
+  
+      p {
+        max-width: 85%;
+      }
+    }
+  }
+
+  .bottom-text {
+    padding-left: 15%;
+    max-width: 80%;
+    p {
+      padding-left: 5%;
+    }
+  }
+
+  .core-content {
+    flex-direction: column;
+
+
+    .core-integ,
+    .core-quality,
+    .core-customize,
+    .core-innov,
+    .core-collab {
+      padding-bottom: 40px;
+      
+
+      img {
+        width: 70% !important;
+      }
+
+      span {
+        width: 200% !important;
+        margin-top: 10px;
+      }
+    }
+
+    .core-integ{
+      padding-left: 25%;
+    }
+    .core-quality,
+    .core-innov {
+     margin: 0 auto;
+    }
+
+    .core-customize,
+    .core-innov {
+      margin: 0 auto;
+    }
+
+    .core-collab {
+
+        margin: 0 auto; 
+    }
+
+    .core-collab {
+        width: 50% !important;
+    }
+  }
+}
+
+
+
+
+@media only screen and (min-width: 801px) and (max-width: 1100px) {
+
+
+  .header {
+  
+    h1 {
+      padding-left: 8%;
+    }
+  
+    p {
+      padding-left: 9%;
+      font-size: 20px;
+    }
+  }
+
+  .container-2 {
+    flex-direction: column;
+    padding-left: 20%;
+  
+    .image {
+      padding-left: 6%;
+  
+      img {
+        height: auto;
+        width: 70%;
+      }
+    }
+    
+    .content {
+      padding-left: 5%;
+  
+      p {
+
+        max-width: 70%;
+      }
+    }
+  }
+
+  .bottom-text {
+    padding-left: 20%;
+    max-width: 62%;
+    p {
+      padding-left: 5%;
+    }
+  }
+
+  .Core-container {
+    .core-content {      
+      .core-integ,
+      .core-quality,
+      .core-customize,
+      .core-innov,
+      .core-collab {
+  
+        img {
+          width: 45%;
+          height: auto;
+        }
+  
+  
+        span {
+          margin: 20px;
+        }
+      }
+  
+      .core-collab {
+          width: 50%;
+          flex-direction: column;
+          margin: 0 auto; 
+
+          span{
+            width: 130%;
+          }
+      
+      }
+    }
+  }
+
+}
+
+
+
+@media only screen and (min-width: 1101px) and (max-width: 1400px) {
+
+  .container-2 {
+    padding-left: 5%;
+  
+    .image {
+      padding-top: 50px;
+      align-items: center;
+      padding-left: 5%;
+      
+    }
+
+    .content {
+      padding-left: 3%;
+      
+      h2 {
+        padding-top: 50px;
+        font-size: 50px;
+      }
+  
+      p {
+        padding-left: 2%;
+        max-width: 85%;
+  
+      }
+    }
+  }
+
+  .bottom-text {
+    padding-left: 5%;
+    max-width: 88%;
+    p {
+      padding-left: 5%;
+      max-width: 100%;
+    }
+  }
+
+  .Core-container {
+    .core-content {      
+      .core-integ,
+      .core-quality,
+      .core-customize,
+      .core-innov,
+      .core-collab {
+  
+        img {
+          width: 45%;
+          height: auto;
+        }
+  
+  
+        span {
+          margin: 20px;
+        }
+      }
+      .core-innov {
+        img{
+          width: 40%;
+        }
+      }
+  
+      .core-collab {
+          width: 50%;
+
+          span{
+            width: 130%;
+          }
+      
+      }
+    }
+  }
+
 }
