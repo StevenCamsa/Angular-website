@@ -4,22 +4,20 @@ $font-family: 'Arial Unicode MS', sans-serif;
   width: auto;
   position: fixed;
   top: 0;
-  right: 0; 
+  right: 0;
   z-index: 999;
-  
-  
-  .overlay-content {
 
+  .overlay-content {
     position: relative;
     padding: 40px;
     padding-top: 100px;
     padding-left: 50px;
-    background-color:rgb(255, 255, 255);
-    height: 1000px;
+    background-color: rgb(255, 255, 255);
+    height: 2000px;
     width: 190px;
     margin-top: 0;
     overflow-x: hidden;
-    
+
     a {
       padding: 20px;
       text-align: center;
@@ -29,27 +27,58 @@ $font-family: 'Arial Unicode MS', sans-serif;
       display: block;
       transition: 0.3s;
       text-decoration: none;
-
     }
   }
 }
 
 .toggle-menu {
-  display: none;
-  background-color:#0F365A;
+  display: block;
+  background-color: #0f365a;
   position: fixed;
-  padding: 16px;
+  padding-left: 40px;
+  padding-right: 40px;
+  padding-bottom: 33px;
+  padding-top: 20px;
   top: 0;
-  right: 0px; 
+  right: 0px;
   z-index: 999;
-  
+
   span {
-    font-size: 30px;
     cursor: pointer;
     transition: 0.3s;
     color: #ffffff;
+    display: inline-block;
+    transform-origin: 50% 50%;
+    position: relative;
+  
+
+    &:before {
+      content: attr(data-content);;
+      font-size: 35px;
+      position: absolute;
+      transform: translate(-50%, -50%) rotate(0deg);
+      transition: transform 0.3s ease-in-out;
+    }
   }
 
+  &.open span:before {
+    transform: translate(-50%, -50%) rotate(90deg);
+  }
+
+  &.second-rotation span:before {
+    transform: translate(-50%, -50%) rotate(180deg);
+  }
+  
+}
+
+@keyframes rotateAnimation {
+  0%{
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(90deg);
+  }
+  
 }
 
 @media (max-width: 800px) {

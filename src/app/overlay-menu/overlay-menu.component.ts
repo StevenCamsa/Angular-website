@@ -10,16 +10,15 @@ import { CommonModule } from '@angular/common';
 })
 export class OverlayMenuComponent {
   isNavOpen = false;
+  rotationClass = '';
 
-  openNav() {
-    this.isNavOpen = true;
+  toggleNav() {
+    this.isNavOpen = !this.isNavOpen;
+    this.rotationClass = this.isNavOpen ? 'open' : 'second-rotation';
   }
 
   closeNav() {
     this.isNavOpen = false;
-  }
-
-  toggleNav() {
-    this.isNavOpen = !this.isNavOpen;
+    this.rotationClass = '';
   }
 }
